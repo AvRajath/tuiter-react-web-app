@@ -1,85 +1,185 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"/>
     <link href="index.css" rel="stylesheet"/>
-    <link href="../style.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class="wd-side-border wd-left-margin">
-    <input type="text" class="wd-search-bar" placeholder="Search Tuiter">
-    <a href="explore-settings.html"><i class="fa fa-gear fa-spin wd-gear-style"></i></a>
-    <br>
-    <br>
-    <div class="wd-tabs">
-        <a class="wd-selected"> For You</a>
-        <a class="wd-not-selected"> Trending </a>
-        <a class="wd-not-selected"> COVID-19 </a>
-        <a class="wd-not-selected"> News </a>
-        <a class="wd-not-selected"> Sports </a>
-        <a class="wd-not-selected"> Entertainment</a>
+</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <div class="list-group wd-list-grp">
+                <a class="list-group-item">
+                    <i class="fab fa-twitter"></i><br/></a>
+                <a href="../home.html" class="list-group-item list-group-item-action">
+                    <i class="fa fa-home"> </i> Home</a>
+                <a href="index.html" class="list-group-item list-group-item-action active">
+                    <i class="fa fa-hashtag"> </i> Explore </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-bell"> </i> Notifications</a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fas fa-envelope"> </i> Messages</a>
+                <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+                    <i class="fas fa-bookmark"></i> Bookmarks</a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fas fa-list"> </i> Lists</a>
+                <a href="../profile.html" class="list-group-item list-group-item-action">
+                    <i class="fas fa-user"> </i> Profile</a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fas fa-ellipsis-h"> </i> More</a>
+            </div>
+            <button type="button" class="btn btn-primary rounded-pill wd-button-grp">Tweet</button>
+        </div>
+        <div class="wd-main-grp col-5">
+            <input
+                    class="wd-search-bar"
+                    placeholder="Search Tuiter"
+            />
+            <a href="explore-settings.html"><i class="fas fa-cog wd-gear-style"></i></a>
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+            <div class="card wd-card-size">
+                <img src="robotics.png" class="card-img-top" alt="...">
+                <div class="card-img-bottom wd-title-card">
+                    <h2> Amazon Robotic's </h2>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="card-body">
+                            <img src="logo.svg" class="rounded float-right wd-img-main" alt="Cinque Terre"/>
+                            <div class="text-secondary wd-text-size">
+                                Web Development
+                            </div>
+                            <h6 class="text-black-50"><b class="text-body">ReactJS <i class="fas fa-check-circle"></i></b> - 2h</h6>
+                            <p class="card-text text-body"><b>Some quick example text to build on the card title and
+                                make up the bulk of the card's content. </b></p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="card-body">
+                            <img src="js.png" class="rounded float-right wd-img-main" alt="Cinque Terre"/>
+                            <h6 class="text-black-50"><b class="text-body">JavaScript <i class="fas fa-check-circle"></i></b> - 2h</h6>
+                            <p class="card-text text-body"><b>JavaScript is the most used language to implement full stack application, hence it is worth learning it. </b></p>
+                            <div class="text-secondary wd-text-size">
+                                123k Tweets
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="card-body">
+                            <img src="jquery.png" class="rounded float-right wd-img-main" alt="Cinque Terre"/>
+                            <div class="text-secondary wd-text-size">
+                                Web Development
+                            </div>
+                            <p class="card-text text-body"><b> JQuery </b></p>
+                            <div class="text-secondary wd-text-size">
+                                123k Tweets
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="card-body">
+                            <img src="nodejs.png" class="rounded float-right wd-img-main" alt="Cinque Terre"/>
+                            <div class="text-secondary wd-text-size">
+                                Web Development
+                            </div>
+                            <p class="card-text text-body"><b> NodeJS <i class="fas fa-check-circle"></i></b></p>
+                            <div class="text-secondary wd-text-size">
+                                123k Tweets
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-3">
+            <div class="list-group wd-follow-grp">
+                <a class="list-group-item">
+                    <b>Who to follow</b></a>
+                <a class="list-group-item list-group-item-action">
+                    <img src="covid.jpg" class="rounded-circle float-left wd-img-size" alt="Cinque Terre"/>
+                    <button type="button" class="btn btn-primary rounded-pill wd-flw-grp"> Follow </button>
+                    <div class="wd-padding-left">
+                        <b>Covid-19</b> <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="text-secondary">
+                        @covid19
+                    </div>
+
+                </a>
+                <a class="list-group-item list-group-item-action">
+                    <img src="spacex.jpg" class="rounded-circle float-left wd-img-size" alt="Cinque Terre"/>
+                    <button type="button" class="btn btn-primary rounded-pill wd-flw-grp"> Follow </button>
+                    <div class="wd-padding-left">
+                        <b>Space-X</b> <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="text-secondary">
+                        @spacex
+                    </div>
+
+                </a>
+                <a class="list-group-item list-group-item-action">
+                    <img src="tesla.png" class="rounded-circle float-left wd-img-size" alt="Cinque Terre"/>
+                    <button type="button" class="btn btn-primary rounded-pill wd-flw-grp"> Follow </button>
+                    <div class="wd-padding-left">
+                        <b>Tesla</b> <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="text-secondary">
+                        @tsla
+                    </div>
+
+                </a>
+                <a class="list-group-item list-group-item-action">
+                    <img src="nasa.png" class="rounded-circle float-left wd-img-size" alt="Cinque Terre"/>
+                    <button type="button" class="btn btn-primary rounded-pill wd-flw-grp"> Follow </button>
+                    <div class="wd-padding-left">
+                        <b>NASA</b> <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="text-secondary">
+                        @nasa
+                    </div>
+
+                </a>
+                <a class="list-group-item list-group-item-action">
+                    <img src="virgin.png" class="rounded-circle float-left wd-img-size" alt="Cinque Terre"/>
+                    <button type="button" class="btn btn-primary rounded-pill wd-flw-grp"> Follow </button>
+                    <div class="wd-padding-left">
+                        <b>Virgin Galactic</b> <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="text-secondary">
+                        @virgingalactic
+                    </div>
+
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="wd-gap-div"></div>
-    <div class="wd-suggested-container">
-        <label class="wd-horizontal-dots-gray"></label>
-        <div class="wd-topic-suggested">
-            Trending in Science
-        </div>
-        Starship
-        <div class="wd-topic-suggested">
-            55.5k Tweets
-        </div>
-    </div>
-    <div class="wd-suggested-container">
-        <label class="wd-horizontal-dots-gray"></label>
-        <div class="wd-topic-suggested">
-            Sports Trending
-        </div>
-        Sachin Tendulkar
-        <div class="wd-topic-suggested">
-            100k Tweets
-        </div>
-    </div>
-    <div class="wd-suggested-posts">
-        <img class="wd-suggested-image" src="bike.jpg"/>
-        <div class="wd-suggested-posts-owner">The New York Times
-            <a class="wd-topic-suggested">. Yesterday </a>
-        </div>
-        <div class="wd-position-data"> Yamaha releases its New R15 with sporty looks, specs yet to be revealed by the company, very excited to see the new bike</div>
-
-    </div>
-    <div class="wd-suggested-posts">
-        <img class="wd-suggested-image" src="covid.jpg"/>
-            <a class="wd-topic-suggested">COVID-19. Yesterday </a>
-
-        <div class="wd-position-data"> COVID-19: News and updates for Massachusetts</div>
-
-    </div>
-
-    <div class="wd-suggested-posts">
-        <img class="wd-suggested-image" src="spacex.jpg"/>
-        <div class="wd-suggested-posts-owner">The Times of Massachusetts
-            <a class="wd-topic-suggested">. Today </a>
-        </div>
-        <div class="wd-position-data"> SpaceX about to launch a new satellite which will build a building in space</div>
-
-    </div>
-
-    <div class="wd-suggested-container">
-        <label class="wd-horizontal-dots-gray"></label>
-        <div class="wd-topic-suggested">
-            Trending in United States
-        </div>
-        Wonder Bread
-        <div class="wd-topic-suggested">
-            1,245 Tweets
-        </div>
-    </div>
-
-
 </div>
 </body>
 </html>
