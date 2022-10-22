@@ -15,7 +15,7 @@ const PostSummaryItem = (post) => {
                         </div>
                     </div>
                     <div class="col-3">
-                        <img src=${post.image} class="rounded wd-img-main" alt="Cinque Terre"/>
+                        <img src=${post.image} class="rounded" style="width: 100%; padding: 5px;" alt="Cinque Terre"/>
                     </div>
                 </div>
             </div>
