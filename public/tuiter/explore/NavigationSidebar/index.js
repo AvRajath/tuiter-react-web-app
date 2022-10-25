@@ -3,9 +3,9 @@ const NavigationSidebar = (page) => {
    <div class="list-group d-none d-lg-block">
      <a class="list-group-item" href="#">
         <i class="fab fa-twitter text-white"></i><br/></a>       
-     <a href="../home.html" class="list-group-item ${page === 'home' ? 'active' : '' }">
+     <a href="../HomeScreen/index.html" class="list-group-item ${page === 'home' ? 'active' : '' }">
         <i class="fa fa-home text-white"> </i> Home</a>
-     <a href="index.html" class="list-group-item ${page === 'explore' ? 'active' : '' }">
+     <a href="../explore/index.html" class="list-group-item ${page === 'explore' ? 'active' : '' }">
         <i class="fa fa-hashtag fw-bold"> </i> Explore </a>
      <a href="#" class="list-group-item">
         <i class="fa fa-bell text-white fw-normal"> </i> Notifications</a>
