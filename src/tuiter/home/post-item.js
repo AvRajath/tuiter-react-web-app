@@ -16,7 +16,7 @@ const PostItem = ({ post }) => {
                     </div>
                     <div>{post.tagline}</div>
                     <div className="row">
-                        <img src={post.postImage} className="rounded"/>
+                        <img src={post.postImage} className="rounded" alt={"..."}/>
                     </div>
 
                     <ul className="nav nav-fill mt-2 text-secondary">
@@ -24,7 +24,7 @@ const PostItem = ({ post }) => {
                             <i className="bi bi-chat-left-dots"></i> {post.commentsCount}
                         </li>
                         <li className="nav-item">
-                            <i className="bi bi-repeat"></i> {post.retuitsCount}
+                            <i className="bi bi-repeat"></i> {post.retweetsCount}
                         </li>
                         <li className="nav-item">
                             <i className="bi bi-heart-fill"></i> {post.likesCount}
