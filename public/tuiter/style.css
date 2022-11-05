@@ -1,0 +1,9 @@
+.wd-left-margin {
+    margin-left: 16px;
+}
+
+.wd-side-border {
+    border-color: rgb(47,51,54);
+    border-width: 1px;
+    border-style: solid;
+}
