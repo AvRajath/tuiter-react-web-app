@@ -1,6 +1,4 @@
-import PostItem from "./post-item";
 import React from "react";
-import posts from "./posts.json";
 import WhatsHappening from "./whats-happening";
 import TuitsList from "../tuits/tuits-list";
 
