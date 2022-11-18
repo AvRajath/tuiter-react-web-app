@@ -1,0 +1,15 @@
+{
+  "firstName": "Iron",
+  "lastName": "Man",
+  "handle": "robert",
+  "profilePicture": "/images/ironman.jpg",
+  "bannerPicture": "/images/banner.jpg",
+  "bio": "Rich, techie, strong and a part of Avengers!",
+  "website": "youtube.com/ironman",
+  "location": "Boston, MA",
+  "dateOfBirth": "11/28/1997",
+  "dateJoined": "4/2009",
+  "followingCount": 340,
+  "followersCount": 22300,
+  "noOfTuits": 3245
+}
