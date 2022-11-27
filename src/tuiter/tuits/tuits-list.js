@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from "react-redux";
-import { findTuits } from "../../services/tuits-service";
 import TuitItem from "./tuit-item";
 import React, { useEffect } from "react";
 import { findTuitsThunk } from "../../services/tuits-thunks";
