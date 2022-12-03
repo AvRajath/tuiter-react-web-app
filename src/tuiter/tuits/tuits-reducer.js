@@ -2,7 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 import {
   deleteTuitThunk,
   findTuitsThunk,
-  createTuitThunk
+  createTuitThunk,
+  updateTuitThunk
 } from "../../services/tuits-thunks";
 
 const currentUser = {
@@ -40,17 +41,24 @@ const tuitsSlice = createSlice({
     },
     [findTuitsThunk.rejected]: state => {
       state.loading = false;
+    },
+    [deleteTuitThunk.fulfilled]: (state, { payload }) => {
+      state.loading = false;
+      state.tuits = state.tuits.filter(t => t._id !== payload);
+    },
+    [createTuitThunk.fulfilled]: (state, { payload }) => {
+      state.loading = false;
+      state.tuits.push(payload);
+    },
+    [updateTuitThunk.fulfilled]: (state, { payload }) => {
+      state.loading = false;
+      const tuitNdx = state.tuits.findIndex(t => t._id === payload._id);
+      state.tuits[tuitNdx] = {
+        ...state.tuits[tuitNdx],
+        ...payload
+      };
     }
   },
-  [deleteTuitThunk.fulfilled]: (state, { payload }) => {
-    state.loading = false;
-    state.tuits = state.tuits.filter(t => t._id !== payload);
-  },
-  [createTuitThunk.fulfilled]: (state, { payload }) => {
-    state.loading = false;
-    state.tuits.push(payload);
-  },
-
   reducers: {
     deleteTuit(state, action) {
       const index = state.findIndex(tuit => tuit._id === action.payload);

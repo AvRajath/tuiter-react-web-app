@@ -9,6 +9,7 @@ const TuitItem = ({ tuit }) => {
     dispatch(deleteTuitThunk(id));
   };
 
+  console.log(tuit);
   return (
     <li className="list-group-item p-2 bg-transparent">
       <div className="row">
